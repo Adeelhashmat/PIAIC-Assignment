@@ -1,0 +1,23 @@
+[project]
+name = "assignment-2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "adeelhashmat", email = "adeelhashmatkhan@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "openai-agents>=0.0.15",
+]
+
+[project.scripts]
+run-agent = "hello_agent.agent_hello:my_first_agent"
+
+[tool.uv.scripts]
+hello = "python main.py"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
